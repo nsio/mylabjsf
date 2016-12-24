@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core">
+	<h:head>
+		<f:facet name="first">
+			<meta charset="UTF-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1" />
+		</f:facet>
+		<title>MyLab</title>
+		
+		<h:outputStylesheet library="mylab" name="css/bootstrap.min.css"/>
+		<h:outputStylesheet library="mylab" name="css/bootstrap.css"/>
+		<h:outputStylesheet library="mylab" name="css/bootstrap-theme.css"/>
+		<h:outputStylesheet library="mylab" name="css/bootstrap-theme.min.css"/>
+		
+		<h:outputScript target="body" library="primefaces" name="jquery/jquery.js"/>
+		<h:outputScript target="body" library="mylab" name="js/mylab.js"/>
+		<h:outputScript target="body" library="mylab" name="js/bootstrap.js"/>
+		<h:outputScript target="body" library="mylab" name="js/bootstrap.min.js"/>
+	</h:head>
+	
+	<h:body>
+	    
+	    <ui:include src="Menu.xhtml"></ui:include>
+	    
+	    <section class="aw-content js-content">
+	    	<ui:insert name="content"></ui:insert>
+	    </section>
+	    
+	</h:body>
+	
+</html>
