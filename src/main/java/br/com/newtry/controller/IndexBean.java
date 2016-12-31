@@ -9,13 +9,12 @@ import br.com.newtry.mylab.repository.Atms;
 @ManagedBean
 @RequestScoped
 public class IndexBean {
-
 	
 	@Inject
 	private Atms atms;
 	
 	public String executeSomething(){
-		System.out.println(this.atms.listarTodos());
+		this.atms.listarTodos();
 		return "atm";
 	}
 	
